@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - run: echo "$ID_KEY_HOLANDA" > holanda.pem
+      - run: echo "${{ secrets.ID_KEY_HOLANDA }}" > holanda.pem
       - run: chmod 400 holanda.pem
-      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" $USUARIO_HOLANDA@$HOST_HOLANDA 'ls -la'
+      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" ${{ secrets.USUARIO_HOLANDA }} @${{ secrets.HOST_HOLANDA }} 'ls -la'
 
