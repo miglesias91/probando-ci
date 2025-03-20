@@ -12,5 +12,5 @@ jobs:
     steps:
       - run: echo "$ID_KEY_HOLANDA" > holanda.pem
       - run: chmod 400 holanda.pem
-      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" $usuario_holanda@$host_holanda 'ls -la'
+      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" $USUARIO_HOLANDA@$HOST_HOLANDA 'ls -la'
 
