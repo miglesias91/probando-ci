@@ -12,5 +12,5 @@ jobs:
     steps:
       - run: echo "${{ secrets.ID_KEY_HOLANDA }}" > holanda.pem
       - run: chmod 400 holanda.pem
-      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" ${{ secrets.USUARIO_HOLANDA }} @${{ secrets.HOST_HOLANDA }} 'ls -la'
+      - run: ssh -oStrictHostKeyChecking=no -i "holanda.pem" ${{ secrets.USUARIO_HOLANDA }}@${{ secrets.HOST_HOLANDA }} 'ls -la'
 
