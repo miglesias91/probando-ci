@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "${{ secrets.ID_KEY_HOLANDA }}" > holanda.pem
       - run: chmod 400 holanda.pem
-      - run: scp -oStrictHostKeyChecking=no -i "holanda.pem" app.R ${{ secrets.USUARIO_HOLANDA }}@${{ secrets.HOST_HOLANDA }}:~/tablero/app.R
+      - run: scp -oStrictHostKeyChecking=no -i "holanda.pem" README.md ${{ secrets.USUARIO_HOLANDA }}@${{ secrets.HOST_HOLANDA }}:~/tablero/app.R
 
