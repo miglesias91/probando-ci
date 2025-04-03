@@ -5,7 +5,7 @@ on:
     tags:
       - front/**
 jobs:
-  Explore-GitHub-Actions:
+  copiando archivo:
     runs-on: ubuntu-latest
     permissions:
       contents: read
