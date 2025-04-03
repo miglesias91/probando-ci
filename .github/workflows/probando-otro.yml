@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} nuevo tag para automatizador
 on: 
   push:
     tags:
-      - 'automatizador*'
+      - automatizador*
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

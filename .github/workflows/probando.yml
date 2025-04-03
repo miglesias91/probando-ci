@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} nuevo tag para front
 on: 
   push:
     tags:
-      - 'front*'
+      - front*
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
