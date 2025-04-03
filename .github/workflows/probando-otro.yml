@@ -5,7 +5,7 @@ on:
     tags:
       - automatizador/**
 jobs:
-  copiando carpeta:
+  copiando:
     runs-on: ubuntu-latest
     permissions:
       contents: read

@@ -5,7 +5,7 @@ on:
     tags:
       - front/**
 jobs:
-  copiando archivo:
+  copiando:
     runs-on: ubuntu-latest
     permissions:
       contents: read
